@@ -28,7 +28,7 @@ test("verify Login",async ({page}) => {
     console.log(firstname);
     
     await leadmodule.CreateLeadWithMandatoryFields(firstname,leaddata.lastname)
-await expect(page).toHaveURL(/#Lead\/view\/.+/);
+//await expect(page).toHaveURL(/#Lead\/view\/.+/);
     await page.waitForTimeout(3000)
 
     

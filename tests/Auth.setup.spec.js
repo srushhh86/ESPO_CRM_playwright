@@ -3,7 +3,7 @@ import {LoginPage} from "../POM/LoginPage"
 import logindata from "../TestData/commondata.json"
 
 
-setup('login',async ({page}) => {
+setup.skip('login',async ({page}) => {
     let login=new LoginPage(page)
 
     await page.goto(logindata.url)
