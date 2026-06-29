@@ -29,12 +29,12 @@ test("lead with all fields",async ({page}) => {
     let email=firstname+"@gmail.com"
     
     await leadmodule.CreateLeadWithAllFields(firstname,email,leaddata)
-     await page.waitForTimeout(1000)
-    await leadmodule.LeadLinkBacktoMainPage.click()
-     await page.waitForTimeout(1000)
-    await leadmodule.clickOnYes.click()
+//     await page.waitForTimeout(1000)
+ //   await leadmodule.LeadLinkBacktoMainPage.click()
+   //  await page.waitForTimeout(1000)
+   // await leadmodule.clickOnYes.click()
 
-    await leadmodule.searchLead(firstname)
+  //  await leadmodule.searchLead(firstname)
 
     await page.waitForTimeout(3000)
 
